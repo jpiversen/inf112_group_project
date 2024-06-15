@@ -49,6 +49,7 @@ to have one distinct theme.
 ![Imgur](https://imgur.com/KyHed1J.jpg)
 
 Made by Evangelia Koutsoukou aka Apocalypse, specifically for this project:
-[Her Facebook Page](https://www.facebook.com/EveOfTheApocalypse):
+
+[Her Facebook Page](https://www.facebook.com/EveOfTheApocalypse)
 
 
