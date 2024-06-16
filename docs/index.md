@@ -40,13 +40,13 @@ placing the end-room in the same manner. This grid was then the basis of the Str
 In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
 
 ## Custom art work  
-![Imgur](https://imgur.com/heRULRt.jpg "Custom art work")
+![In-game screenshot](assets/screenshot.png)
 
 We were very lucky to get help with the creation of sprites on our project which gave the project a coherent
 visual theme which made it so much better. Relying purely on publicly available sprites would make it difficult
 to have one distinct theme.
 
-![Imgur](https://imgur.com/KyHed1J.jpg)
+![menu file](assets/menu.png)
 
 Made by Evangelia Koutsoukou aka Apocalypse, specifically for this project:
 
