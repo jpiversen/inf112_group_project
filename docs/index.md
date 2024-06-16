@@ -24,7 +24,7 @@ When we had finished optimizing everything this simple enemy movement system fel
 trick enemies by having them see you in one position and you moving up behind them to shoot.
 
 ## Dynamic map creation?
-To enhance replayability, we developed a system to dynamically generate maps in our game. One of the requierments of the
+To enhance replayability, we developed a system to dynamically generate maps in our game. One of the requirements of the
 project was to be able to create maps from strings, so a logical step to this was to first dynamically create the strings
 then create the map based on said strings. We settled on a three method approach, where the TileMap-class was responsible
 for converting the StringMap-objects into tiles that could be used by the gamehandler. The StringMap-class was responsible
@@ -35,7 +35,7 @@ function to include test-maps. The numbered-rooms were sections intended for ran
 consist of a startingRoom, an endRoom and a number of randomly selected numbered-rooms. In order for the StringMap-class to
 know where to place the rooms however, it needed a GridMap-object. The GridMap-class created a Grid, always starting with the
 spawn-room of the player, and then randomly picked a direction (up, down, left, right) and placed a random room. Then it continued
-this behaviour, randomly picking a location adjacent to a previously placed room until it had placed all the random- rooms before
+this behaviour, randomly picking a location adjacent to a previously placed room until it had placed all the random rooms before
 placing the end-room in the same manner. This grid was then the basis of the StringMap, which was the basis of the TileMap.
 In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
 
