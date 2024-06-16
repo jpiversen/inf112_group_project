@@ -39,3 +39,4 @@ this behaviour, randomly picking a location adjacent to a previously placed room
 placing the end-room in the same manner. This grid was then the basis of the StringMap, which was the basis of the TileMap.
 In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
 
+## Items system?
