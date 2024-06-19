@@ -40,7 +40,7 @@ placing the end-room in the same manner. This grid was then the basis of the Str
 In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
 
 ## Item system?
-We wanted the power-ups offered in game to be varied and exciting. In the designing phase, we decided that 5 items was 
+In the designing phase, we decided that 5 items was 
 the magic number to have as less would be challenging and more would be too overpowered.
 However, since the number of items spawned would depend on the randomized map system, we had to introduce some 
 flexibility. To achieve this, an algorithm was created in which the GameItems class retrieves the spawn locations from 
@@ -61,5 +61,8 @@ HealthPU - Gives the player 10HP of health
 
 SpeedPU (1-3) - Speeds up player moment for a period of time. 1 is shortest and 3 is the longest. 
 
-
+The selected locations and item types per map are then passed onto the Model class which used a Strategy Design Pattern
+to carry out the power up effect per item type that the player interacted with. 
+We wanted the power-ups offered in game to be varied and exciting, we think we achieved that and hope that the player
+finds the randomization exciting and fun to play with!
 
