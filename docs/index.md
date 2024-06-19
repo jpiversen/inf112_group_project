@@ -65,9 +65,6 @@ The selected locations and item types per map are then passed onto the Model cla
 to carry out the power up effect per item type that the player interacted with. 
 We wanted the power-ups offered in game to be varied and exciting, we think we achieved that and hope that the player
 finds the randomization exciting and fun to play with!
-this behaviour, randomly picking a location adjacent to a previously placed room until it had placed all the random rooms before
-placing the end-room in the same manner. This grid was then the basis of the StringMap, which was the basis of the TileMap.
-In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
 
 ## Custom art work  
 ![In-game screenshot](assets/screenshot.png)
