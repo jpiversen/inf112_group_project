@@ -35,9 +35,36 @@ function to include test-maps. The numbered-rooms were sections intended for ran
 consist of a startingRoom, an endRoom and a number of randomly selected numbered-rooms. In order for the StringMap-class to
 know where to place the rooms however, it needed a GridMap-object. The GridMap-class created a Grid, always starting with the
 spawn-room of the player, and then randomly picked a direction (up, down, left, right) and placed a random room. Then it continued
-this behaviour, randomly picking a location adjacent to a previously placed room until it had placed all the random rooms before
+this behaviour, randomly picking a location adjacent to a previously placed room until it had placed all the random-rooms before
 placing the end-room in the same manner. This grid was then the basis of the StringMap, which was the basis of the TileMap.
 In addition to the actual tiles, the map also included spawn locations for items, enemies and the player character.
+
+## Item system?
+In the designing phase, we decided that 5 items was 
+the magic number to have as less would be challenging and more would be too overpowered.
+However, since the number of items spawned would depend on the randomized map system, we had to introduce some 
+flexibility. To achieve this, an algorithm was created in which the GameItems class retrieves the spawn locations from 
+the TileMap class and starts by shuffling the items locations. If there are less than 5 spawn locations (the 
+aforementioned magic number), all the spawn locations would receive a power up item. If there were more spawn locations 
+than 5, the first 5 would be selected for an item and the rest would be given a 50% chance of spawning an item. Now that
+the locations that will spawn an item has been selected, a random power-up was chosen per location. 
+
+The power-ups offered in Rodent Reboot are the following:
+
+ArmorPU - Reduces damage taken by the player for the next 10 hits
+
+BulletSpeedPU - Temporarily makes the player bullets faster
+
+FullHealthPU - Refills player health
+
+HealthPU - Gives the player 10HP of health
+
+SpeedPU (1-3) - Speeds up player moment for a period of time. 1 is shortest and 3 is the longest. 
+
+The selected locations and item types per map are then passed onto the Model class which used a Strategy Design Pattern
+to carry out the power up effect per item type that the player interacted with. 
+We wanted the power-ups offered in game to be varied and exciting, we think we achieved that and hope that the player
+finds the randomization exciting and fun to play with!
 
 ## Custom art work  
 ![In-game screenshot](assets/screenshot.png)
@@ -51,5 +78,6 @@ to have one distinct theme.
 Made by Evangelia Koutsoukou aka Apocalypse, specifically for this project:
 
 [Her Facebook Page](https://www.facebook.com/EveOfTheApocalypse)
+
 
 
